@@ -1,5 +1,5 @@
 import 'package:demo_proj1/GetxController/GetxController.dart';
-import 'package:demo_proj1/widgets.dart';
+import 'package:demo_proj1/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'CheckingClass/CheckText.dart';
@@ -13,6 +13,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   bool click = false;
+  bool click2 = false;
   bool Success = true;
   GettextController gettextController = Get.put(GettextController());
   @override
@@ -76,11 +77,11 @@ class _HomeState extends State<Home> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               CheckboxListTile(
-                                title: Text("b"),
-                                value: click,
+                                title: Text("1"),
+                                value: click2,
                                 onChanged: (newValue) {
                                   setState(() {
-                                    click = newValue!;
+                                    click2 = newValue!;
                                   });
                                 },
                                 controlAffinity: ListTileControlAffinity
