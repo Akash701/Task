@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:core';
+import 'package:demo_proj1/Models/TaskSampleModel.dart';
 import 'package:http/http.dart' as http;
 
 class TaskDataApi {
@@ -10,7 +11,7 @@ class TaskDataApi {
       try {
         var jasonString = response.body;
         print(jasonString);
-        return (jasonString);
+        return taskFromJson(jasonString);
       } catch (e) {
         print(e);
       }

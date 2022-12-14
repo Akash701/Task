@@ -1,9 +1,10 @@
 import 'package:demo_proj1/ApiService/TaskDataAPI.dart';
+import 'package:demo_proj1/Models/TaskSampleModel.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 
 class NotificationController extends GetxController {
-  var TaskListList = [].obs;
+  var TaskListList = <TaskModel>[].obs;
   var isLoading = true.obs;
 
   @override
