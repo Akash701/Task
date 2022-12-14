@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
                             children: [
                               Center(
                                 child: CheckboxListTile(
-                                  title: Text("title text"),
+                                  title: Text("a"),
                                   value: click,
                                   onChanged: (newValue) {
                                     setState(() {
@@ -76,7 +76,7 @@ class _HomeState extends State<Home> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               CheckboxListTile(
-                                title: Text("title text"),
+                                title: Text("b"),
                                 value: click,
                                 onChanged: (newValue) {
                                   setState(() {
